@@ -6,6 +6,16 @@ import styles from '../styles/Home.module.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  const callAPI = async () => {
+    try {
+      const res = await fetch(`https://strapi.openomic.dk/api/employees`);
+      const data = await res.json();
+      console.log(data);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
   return (
     <>
       <Head>
@@ -39,7 +49,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={styles.center}>
+        <div className={styles.center} onClick={callAPI}>
           <Image
             className={styles.logo}
             src="/next.svg"
