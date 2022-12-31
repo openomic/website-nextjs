@@ -2,15 +2,15 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
+import { EmployeeService } from "../data"
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-  const callAPI = async () => {
+  const getEmployees = async () => {
     try {
-      const res = await fetch(`https://strapi.openomic.dk/api/employees`);
-      const data = await res.json();
-      console.log(data);
+      const employees = await EmployeeService.getEmployees();
+      console.log(employees);
     } catch (err) {
       console.log(err);
     }
@@ -49,7 +49,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={styles.center} onClick={callAPI}>
+        <div className={styles.center} onClick={getEmployees}>
           <Image
             className={styles.logo}
             src="/next.svg"
