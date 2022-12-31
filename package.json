@@ -3,11 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "npm run openapi:code && next dev",
-    "build": "npm run openapi:code && next build",
-    "start": "npm run openapi:code && next start",
+    "dev": "npm run openapi:dev && next dev",
+    "build": "npm run openapi:prod && next build",
+    "start": "next start",
     "lint": "next lint",
-    "openapi:code": "openapi --input website-api.json --output ./data"
+    "openapi:dev": "openapi --input http://localhost:1337/documentation/api.json --output ./data",
+    "openapi:prod": "openapi --input https://strapi.openomic.dk/documentation/api.json --output ./data"
   },
   "dependencies": {
     "@next/font": "13.1.1",
