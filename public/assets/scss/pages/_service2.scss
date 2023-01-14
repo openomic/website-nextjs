@@ -1,11 +1,8 @@
-.none-pattern
-{
-    &::before
-    {
-        display: none;
-    }
+.none-pattern {
+  &::before {
+    display: none;
+  }
 }
-.page-service-2
-{
-    background: url(../../imgs/page/services/2/bg-banner.svg) no-repeat;
+.page-service-2 {
+  background: url(../../imgs/page/services/2/bg-banner.svg) no-repeat;
 }

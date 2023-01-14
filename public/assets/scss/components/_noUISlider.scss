@@ -8,7 +8,8 @@
  * These styles are required for noUiSlider to function.
  * You don't need to change these rules to apply your design.
  */
-.noUi-target,.noUi-target * {
+.noUi-target,
+.noUi-target * {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -ms-touch-action: none;
@@ -30,7 +31,7 @@
   height: 100%;
   position: relative;
   z-index: 1;
-/* Fix 401 */
+  /* Fix 401 */
 }
 
 .noUi-origin {
@@ -47,14 +48,14 @@
 }
 
 .noUi-stacking .noUi-handle {
-/* This class is applied to the lower origin when
+  /* This class is applied to the lower origin when
    its values is > 50%. */
   z-index: 10;
 }
 
 .noUi-state-tap .noUi-origin {
-  -webkit-transition: left 0.3s,top .3s;
-  transition: left 0.3s,top .3s;
+  -webkit-transition: left 0.3s, top 0.3s;
+  transition: left 0.3s, top 0.3s;
 }
 
 .noUi-state-drag * {
@@ -64,9 +65,10 @@
 /* Painting and performance;
  * Browsers can paint handles in their own layer.
  */
-.noUi-base,.noUi-handle {
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
+.noUi-base,
+.noUi-handle {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 /* Slider size and handle placement;
@@ -81,17 +83,17 @@
   border-radius: 50%;
   left: -7px;
   top: -7px;
-  background-color: #345DBB;
+  background-color: #345dbb;
 }
 
 /* Styling;
  */
 .noUi-background {
-  background: #D6D7D9;
+  background: #d6d7d9;
 }
 
 .noUi-connect {
-  background: #345DBB;
+  background: #345dbb;
   -webkit-transition: background 450ms;
   transition: background 450ms;
 }
@@ -122,8 +124,8 @@
 }
 
 .noUi-handle:active {
-  border: 8px solid #345DBB;
-  border: 8px solid rgba(53,93,187,0.38);
+  border: 8px solid #345dbb;
+  border: 8px solid rgba(53, 93, 187, 0.38);
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   left: -14px;
@@ -132,50 +134,49 @@
 
 /* Disabled state;
  */
-[disabled].noUi-connect,[disabled] .noUi-connect {
+[disabled].noUi-connect,
+[disabled] .noUi-connect {
   background: $color-green-900;
 }
 
-[disabled].noUi-origin,[disabled] .noUi-handle {
+[disabled].noUi-origin,
+[disabled] .noUi-handle {
   cursor: not-allowed;
 }
 
-.ui-slider-handle
-{
-    display: none;
+.ui-slider-handle {
+  display: none;
 }
-.ui-widget.ui-widget-content
-{
-    border: 0px solid #EBEBEB;
+.ui-widget.ui-widget-content {
+  border: 0px solid #ebebeb;
 }
 .noUi-target {
-    border-radius: 12px;
+  border-radius: 12px;
 }
 .noUi-horizontal {
-    height: 6px;
+  height: 6px;
 }
 .noUi-background {
-    background: $color-gray-200;
+  background: $color-gray-200;
 }
 .noUi-origin {
-    border-radius: 12px;
+  border-radius: 12px;
 }
 .noUi-connect {
-    background: $color-green-900;
-    transition: background 450ms;
-        height: 6px;
-    margin-top: 0px;
+  background: $color-green-900;
+  transition: background 450ms;
+  height: 6px;
+  margin-top: 0px;
 }
-.noUi-horizontal .noUi-handle
-{
-    background-color: $color-green-900;
-    border: 1px solid $color-green-900;
-    box-shadow: $box-shadow-3;
-    left: -8px;
-    top: -8px;
+.noUi-horizontal .noUi-handle {
+  background-color: $color-green-900;
+  border: 1px solid $color-green-900;
+  box-shadow: $box-shadow-3;
+  left: -8px;
+  top: -8px;
 }
 .noUi-handle:active {
-    border-width: 1px;
-    left: -8px;
-    top: -8px;
+  border-width: 1px;
+  left: -8px;
+  top: -8px;
 }
