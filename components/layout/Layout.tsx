@@ -4,7 +4,7 @@ import { BackToTop } from '../elements/BackToTop';
 import { Footer } from './Footer';
 import { Header } from './Header';
 
-export interface LayoutProps {
+interface LayoutProps {
   children?: ReactNode;
 }
 

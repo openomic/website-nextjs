@@ -1,12 +1,20 @@
 import '../public/assets/css/style.css';
 import '../styles/globals.css';
 
-import { OpenAPI } from '../data';
+import { Fetcher } from 'openapi-typescript-fetch';
 
-import type { AppProps } from 'next/app'
+import { paths } from '../client';
+
+import type { AppProps } from "next/app";
+export const fetcherClient = Fetcher.for<paths>();
+
 export default function App({ Component, pageProps }: AppProps) {
-  
-  OpenAPI.BASE = process.env.NEXT_PUBLIC_OPEN_API_BASE!;
-
-  return <Component {...pageProps} />
+  fetcherClient.configure({
+    baseUrl: "https://strapi.openomic.dk/api",
+    init: {
+      headers: {},
+    },
+    use: [], // middlewares
+  });
+  return <Component {...pageProps} />;
 }

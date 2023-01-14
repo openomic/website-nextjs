@@ -8,12 +8,12 @@
     "build": "npm run openapi:prod && next build",
     "start": "next start",
     "lint": "next lint",
-    "openapi:dev": "openapi --input http://localhost:1337/documentation/api.json --output ./data",
-    "openapi:prod": "openapi --input https://strapi.openomic.dk/documentation/api.json --output ./data"
+    "openapi:dev": "npx openapi-typescript http://localhost:1337/documentation/api.json --path-params-as-types --output client.ts",
+    "openapi:prod": "npx openapi-typescript https://strapi.openomic.dk/documentation/api.json --path-params-as-types --output client.ts"
   },
   "dependencies": {
     "next": "13.1.1",
-    "openapi-typescript-codegen": "^0.23.0",
+    "openapi-typescript-fetch": "^1.1.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "swiper": "^8.4.5",
