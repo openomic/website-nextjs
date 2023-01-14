@@ -1,6 +1,34 @@
+import { Fetcher, OpReturnType } from 'openapi-typescript-fetch';
+
+import { operations, paths } from '../client';
 import { Layout } from '../components/layout/Layout';
 
-export default function About() {
+export async function getServerSideProps() {
+  const fetcherClient = Fetcher.for<paths>();
+  fetcherClient.configure({
+    baseUrl: process.env.NEXT_PUBLIC_OPEN_API_BASE!,
+    init: {
+      headers: {},
+    },
+    use: [],
+  });
+  const getReferences = fetcherClient.path("/references").method("get").create();
+  const getTechnologies = fetcherClient.path("/technologies").method("get").create();
+
+  const { data: references } = await getReferences({});
+  const { data: technologies } = await getTechnologies({});
+  return { props: { references, technologies } };
+}
+
+export default function References({
+  references,
+  technologies
+}: {
+  references: OpReturnType<operations["get/references"]>;
+  technologies: OpReturnType<operations["get/technologies"]>;
+}) {
+  console.log(references.data);
+  console.log(technologies.data);
   return (
     <Layout title="Openomic - Referencer">
       <section className="section-box pt-50 pb-50">
