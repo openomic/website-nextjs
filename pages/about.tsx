@@ -1,12 +1,20 @@
 import Link from 'next/link';
-import { OpReturnType } from 'openapi-typescript-fetch';
+import { Fetcher, OpReturnType } from 'openapi-typescript-fetch';
 
-import { operations } from '../client';
+import { operations, paths } from '../client';
 import { Layout } from '../components/layout/Layout';
-import { fetcherClient } from './_app';
 
 export async function getServerSideProps() {
+  const fetcherClient = Fetcher.for<paths>();
+  fetcherClient.configure({
+    baseUrl: process.env.NEXT_PUBLIC_OPEN_API_BASE!,
+    init: {
+      headers: {},
+    },
+    use: [],
+  });
   const getEmployees = fetcherClient.path("/employees").method("get").create();
+
   const { data: employees } = await getEmployees({});
   return { props: { employees } };
 }
