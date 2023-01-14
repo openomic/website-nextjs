@@ -26,3 +26,14 @@ export const Logo = ({ width, height }: LogoProps) => {
     />
   );
 };
+
+export const ProgrammingOwl = ({ width, height }: LogoProps) => {
+  return (
+    <Image
+      src="/programming-owl.png"
+      alt="Programming Owl"
+      width={width ?? 700}
+      height={height ?? 605}
+    />
+  );
+};

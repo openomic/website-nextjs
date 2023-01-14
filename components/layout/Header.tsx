@@ -31,17 +31,22 @@ export const Header = () => {
                 <ul className="main-menu">
                   <li>
                     <Link href="/" legacyBehavior>
-                      <a className="active">Home</a>
+                      <a className="active">Forside</a>
                     </Link>
                   </li>
                   <li>
                     <Link href="/about" legacyBehavior>
-                      <a>About</a>
+                      <a>Om os</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/contact" legacyBehavior>
-                      <a>Kontakt os</a>
+                    <Link href="/references" legacyBehavior>
+                      <a>Referencer</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/career" legacyBehavior>
+                      <a>Karriere</a>
                     </Link>
                   </li>
                 </ul>

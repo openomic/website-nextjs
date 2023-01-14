@@ -3092,7 +3092,7 @@ label {
 }
 .banner-hero.banner-1 .banner-imgs img {
   position: absolute;
-  bottom: -40px;
+  /* bottom: 20px; */
   right: 0px;
   left: 0px;
   max-width: 100%;
