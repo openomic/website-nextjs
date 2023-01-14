@@ -10,11 +10,11 @@ export const fetcherClient = Fetcher.for<paths>();
 
 export default function App({ Component, pageProps }: AppProps) {
   fetcherClient.configure({
-    baseUrl: "https://strapi.openomic.dk/api",
+    baseUrl: process.env.NEXT_PUBLIC_OPEN_API_BASE!,
     init: {
       headers: {},
     },
-    use: [], // middlewares
+    use: []
   });
   return <Component {...pageProps} />;
 }
