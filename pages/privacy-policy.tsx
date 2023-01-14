@@ -1,8 +1,8 @@
 import { Layout } from '../components/layout/Layout';
 
-export default function About() {
+export default function PrivacyPolicy() {
   return (
-    <Layout>
+    <Layout title="Openomic - Privatlivspolitik">
       <section className="section-box pt-50 pb-50">
         <div className="container">
           <div className="row">

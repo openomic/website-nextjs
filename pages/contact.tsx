@@ -2,7 +2,7 @@ import { Layout } from '../components/layout/Layout';
 
 export default function Contact() {
   return (
-    <Layout>
+    <Layout title="Openomic - Kontakt os">
       <section className="section-box">
         <div className="container">
           <div className="row">

@@ -12,7 +12,7 @@ export default function Home() {
   };
 
   return (
-    <Layout>
+    <Layout title="Openomic - Forside">
       <section className="section-box">
         <div className="banner-hero banner-1">
           <div className="container">

@@ -25,7 +25,7 @@ export default function About({
   employees: OpReturnType<operations["get/employees"]>;
 }) {
   return (
-    <Layout>
+    <Layout title="Openomic - Om os">
       <section className="section-box pt-50 pb-50">
         <div className="container">
           <div className="row">

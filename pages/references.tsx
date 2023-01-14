@@ -2,7 +2,7 @@ import { Layout } from '../components/layout/Layout';
 
 export default function About() {
   return (
-    <Layout>
+    <Layout title="Openomic - Referencer">
       <section className="section-box pt-50 pb-50">
         <div className="container">
           <div className="row">
