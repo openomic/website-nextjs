@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 
+import { ProgrammingOwl } from '../components/elements/Logo';
 import { Layout } from '../components/layout/Layout';
 
 export default function Home() {
@@ -17,7 +18,7 @@ export default function Home() {
           <div className="container">
             <div className="row">
               <div className="col-lg-7">
-                <h1 className="text-display-2">
+                <h1 className="text-display-3">
                   Openomic hjælper dig fra idé til endelig løsning
                 </h1>
                 <p className="text-body-lead-large color-gray-500 mt-40 pr-40">
@@ -35,11 +36,7 @@ export default function Home() {
               </div>
               <div className="col-lg-5 d-none d-lg-block">
                 <div className="banner-imgs">
-                  <img
-                    className="img-responsive"
-                    alt="Agon"
-                    src="programming-owl.png"
-                  />
+                  <ProgrammingOwl />
                 </div>
               </div>
             </div>

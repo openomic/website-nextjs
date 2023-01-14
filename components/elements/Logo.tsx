@@ -32,8 +32,8 @@ export const ProgrammingOwl = ({ width, height }: LogoProps) => {
     <Image
       src="/programming-owl.png"
       alt="Programming Owl"
-      width={width ?? 700}
-      height={height ?? 605}
+      width={width ?? 500}
+      height={height ?? 432}
     />
   );
 };
