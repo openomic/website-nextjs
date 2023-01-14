@@ -39,22 +39,22 @@ export const Header = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/about" legacyBehavior>
-                      <a className={router.pathname == "/about" ? "active" : ""}>
+                    <Link href="/om-os" legacyBehavior>
+                      <a className={router.pathname == "/om-os" ? "active" : ""}>
                         Om os
                       </a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/references" legacyBehavior>
-                      <a className={router.pathname == "/references" ? "active" : ""}>
+                    <Link href="/referencer" legacyBehavior>
+                      <a className={router.pathname == "/referencer" ? "active" : ""}>
                         Referencer
                       </a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/career" legacyBehavior>
-                      <a className={router.pathname == "/career" ? "active" : ""}>
+                    <Link href="/karriere" legacyBehavior>
+                      <a className={router.pathname == "/karriere" ? "active" : ""}>
                         Karriere
                       </a>
                     </Link>

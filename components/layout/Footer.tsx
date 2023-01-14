@@ -18,7 +18,7 @@ export const Footer = () => {
               <span className="color-gray-900 text-heading-6 mr-30 text-mb-sm-20">
                 Skal vi hjælpe dig med dit næste projekt?
               </span>
-              <Link href="/contact" legacyBehavior>
+              <Link href="/kontakt" legacyBehavior>
                 <a className="btn btn-square">Kontakt os</a>
               </Link>
             </div>
@@ -56,12 +56,12 @@ export const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/about" legacyBehavior>
+                <Link href="/om-os" legacyBehavior>
                   <a>Om os</a>
                 </Link>
               </li>
               <li>
-                <Link href="/contact" legacyBehavior>
+                <Link href="/kontakt" legacyBehavior>
                   <a>Kontakt</a>
                 </Link>
               </li>
@@ -71,18 +71,18 @@ export const Footer = () => {
             <h4 className="text-heading-5">Referencer</h4>
             <ul className="menu-footer mt-20">
               <li>
-                <Link href="/blog-2" legacyBehavior>
-                  <a>Our Blog</a>
+                <Link href="/referencer/1" legacyBehavior>
+                  <a>Reference 1</a>
                 </Link>
               </li>
               <li>
-                <Link href="/page-pricing-1" legacyBehavior>
-                  <a>Plans and Pricing</a>
+                <Link href="/referencer/2" legacyBehavior>
+                  <a>Reference 2</a>
                 </Link>
               </li>
               <li>
-                <Link href="/#" legacyBehavior>
-                  <a>Knowledge Base</a>
+                <Link href="/referencer/3" legacyBehavior>
+                  <a>Reference 3</a>
                 </Link>
               </li>
             </ul>
@@ -91,7 +91,7 @@ export const Footer = () => {
             <h4 className="text-heading-5">Karriere</h4>
             <div className="mt-20 text-body-text color-gray-600 mb-20">
               Ønsker du at gøre karriere hos Openomic? Se vores
-              <Link href="/#" legacyBehavior>
+              <Link href="/karriere" legacyBehavior>
                 <a> ledige stillinger</a>
               </Link>
               .
@@ -106,7 +106,7 @@ export const Footer = () => {
               </span>
             </div>
             <div className="col-md-6 text-center text-lg-end text-md-end">
-              <Link href="/privacy-policy" legacyBehavior>
+              <Link href="/privatlivspolitik" legacyBehavior>
                 <a className="text-body-text color-gray-400 ml-50">
                   Privatlivspolitik
                 </a>
