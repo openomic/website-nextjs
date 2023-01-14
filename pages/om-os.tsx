@@ -81,7 +81,7 @@ export default function About({
                           />
                         </div>
                         <span className="text-body-text-md color-gray-500">
-                          Marketing CEO
+                          {employee.attributes?.position}
                         </span>
                         <h3 className="text-heading-5 mb-5 mt-5">
                           {employee.attributes?.name}
