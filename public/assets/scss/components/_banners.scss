@@ -18,7 +18,7 @@
             right: 0px;
             height: 200px;
             width: 200px;
-            background: url(../imgs/template/pattern-1.svg) no-repeat;
+            background: url(../../imgs/template/pattern-1.svg) no-repeat;
             background-size: cover;
             z-index: 1;
         }
@@ -30,7 +30,7 @@
             left: 0px;
             height: 200px;
             width: 200px;
-            background: url(../imgs/template/pattern-2.svg) no-repeat;
+            background: url(../../imgs/template/pattern-2.svg) no-repeat;
             background-size: cover;
         }
         background-color: $color-orange-100;
@@ -55,7 +55,7 @@
                 left: -80px;
                 height: 224px;
                 width: 176px;
-                background: url(../imgs/page/homepage1/watch-intro.png) no-repeat;
+                background: url(../../imgs/page/homepage1/watch-intro.png) no-repeat;
                 background-size: cover;
                 line-height: 224px;
                 text-align: left;
@@ -87,7 +87,7 @@
             left: 0px;
             height: 200px;
             width: 200px;
-            background: url(../imgs/template/pattern-6.svg) no-repeat;
+            background: url(../../imgs/template/pattern-6.svg) no-repeat;
             background-size: cover;
         }
         .banner-imgs
@@ -139,7 +139,7 @@
                 margin-top: -54px;
                 height: 109px;
                 width: 116px;
-                background: url(../imgs/template/icons/icon-play-2.svg) no-repeat;
+                background: url(../../imgs/template/icons/icon-play-2.svg) no-repeat;
                 z-index: 5;
             }
         }
@@ -147,7 +147,7 @@
 
     &.bg-about-1
     {
-        background: url(../imgs/page/about/1/bg-about-1.png) no-repeat bottom left;
+        background: url(../../imgs/page/about/1/bg-about-1.png) no-repeat bottom left;
         background-size: 100% 100%;
         background-color: transparent;
         padding-top: 100px;
@@ -210,7 +210,7 @@
             width: 859px;
             right: 10px;
             bottom: 0px;
-            background: url(../imgs/page/services/1/bg-banner.svg) no-repeat;
+            background: url(../../imgs/page/services/1/bg-banner.svg) no-repeat;
         }
         .banner-imgs
         {
@@ -243,7 +243,7 @@
         position: relative;
         &::before {
             content: "";
-            background: url(../imgs/page/services/2/bg-banner-2.png) no-repeat center top;
+            background: url(../../imgs/page/services/2/bg-banner-2.png) no-repeat center top;
             width: 100%;
             height: 1125px;
             display: block;
@@ -308,7 +308,7 @@
         min-height: 675px;
         margin-top: -140px;
         margin-bottom: 50px;
-        background: url(../imgs/page/faqs/1/bg-banner.png) no-repeat center top;
+        background: url(../../imgs/page/faqs/1/bg-banner.png) no-repeat center top;
         background-size: auto;
     }
     &.banner-breadcrums

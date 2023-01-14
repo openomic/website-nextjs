@@ -90,7 +90,7 @@
     margin: 50px 0px 50px 0px;
     .text-quote
     {
-        background: url(../imgs/template/icons/left-quote.svg) no-repeat top center;
+        background: url(../../imgs/template/icons/left-quote.svg) no-repeat top center;
         padding: 75px 0px 0px 0px;
         font-size: 32px;
         line-height: 48px;
@@ -129,14 +129,14 @@
     background-repeat: no-repeat;
     &.share-fb
     {
-        background-image: url(../imgs/page/blog/single/share-fb.svg);
+        background-image: url(../../imgs/page/blog/single/share-fb.svg);
     }
     &.share-tw
     {
-        background-image: url(../imgs/page/blog/single/share-tw.svg);
+        background-image: url(../../imgs/page/blog/single/share-tw.svg);
     }
     &.share-pi
     {
-        background-image: url(../imgs/page/blog/single/share-pi.svg);
+        background-image: url(../../imgs/page/blog/single/share-pi.svg);
     }
 }

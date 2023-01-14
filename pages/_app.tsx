@@ -1,4 +1,4 @@
-import '../public/assets/css/style.css';
+import '../public/assets/scss/style.scss';
 import '../styles/globals.css';
 
 import { Fetcher } from 'openapi-typescript-fetch';

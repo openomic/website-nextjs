@@ -172,10 +172,10 @@ label {
 {
 	outline: 0;
 	border-radius: 15px;
-	background: url(../imgs/template/icons/icon-search-input.svg) no-repeat 7px 17px;
+	background: url(../../imgs/template/icons/icon-search-input.svg) no-repeat 7px 17px;
 	padding-left: 50px;
 	&:focus {
-		background: url(../imgs/template/icons/icon-search-input.svg) no-repeat 7px 17px;
+		background: url(../../imgs/template/icons/icon-search-input.svg) no-repeat 7px 17px;
 		border-color: $color-gray-800;
 	}
 }
@@ -238,7 +238,7 @@ label {
 			top: 50%;
 			transform: translateY(-50%);
 			right: 14px;
-			background: url(../imgs/template/icons/icon-eye.svg) no-repeat center;
+			background: url(../../imgs/template/icons/icon-eye.svg) no-repeat center;
 			height: 24px;
 			width: 25px;
 			cursor: pointer;
@@ -249,7 +249,7 @@ label {
 			top: 50%;
 			transform: translateY(-50%);
 			right: 14px;
-			background: url(../imgs/template/icons/icon-email-2.svg) no-repeat center;
+			background: url(../../imgs/template/icons/icon-email-2.svg) no-repeat center;
 			height: 24px;
 			width: 25px;
 			cursor: pointer;

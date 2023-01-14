@@ -11,19 +11,19 @@
         margin-right: 7px;
         &.facebook
         {
-            background: url(../imgs/page/homepage7/facebook.svg) no-repeat center;
+            background: url(../../imgs/page/homepage7/facebook.svg) no-repeat center;
         }
         &.instagram
         {
-            background: url(../imgs/page/homepage7/instagram.svg) no-repeat center;
+            background: url(../../imgs/page/homepage7/instagram.svg) no-repeat center;
         }
         &.twitter
         {
-            background: url(../imgs/page/homepage7/twitter.svg) no-repeat center;
+            background: url(../../imgs/page/homepage7/twitter.svg) no-repeat center;
         }
         &.linkedin
         {
-            background: url(../imgs/page/homepage7/linkedin.svg) no-repeat center;
+            background: url(../../imgs/page/homepage7/linkedin.svg) no-repeat center;
         }
     }
     &::before
@@ -94,7 +94,7 @@
         position: absolute;
         left: 0px;
         top: -100px;
-        background: url(../imgs/page/homepage7/shadow-1.svg) no-repeat 0px 0px;
+        background: url(../../imgs/page/homepage7/shadow-1.svg) no-repeat 0px 0px;
         background-size: contain;
         height: 1000px;
         width: 100%;
@@ -105,7 +105,7 @@
         position: absolute;
         right: 0px;
         top: 55%;
-        background: url(../imgs/page/homepage7/shadow-2.svg) no-repeat top right;
+        background: url(../../imgs/page/homepage7/shadow-2.svg) no-repeat top right;
         background-size: contain;
         height: 1000px;
         width: 100%;

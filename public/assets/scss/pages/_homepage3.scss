@@ -136,11 +136,11 @@
 }
 .accordion-button::after
 {
-    background-image: url(../imgs/template/icons/angle-down.svg);
+    background-image: url(../../imgs/template/icons/angle-down.svg);
 }
 .accordion-button:not(.collapsed)::after
 {
-    background-image: url(../imgs/template/icons/angle-up-white.svg);
+    background-image: url(../../imgs/template/icons/angle-up-white.svg);
     transform: rotate(0deg);
 }
 .accordion
@@ -160,7 +160,7 @@
 }
 .icon-home
 {
-    background: url(../imgs/template/icons/icon-home.svg) no-repeat 0px 0px;
+    background: url(../../imgs/template/icons/icon-home.svg) no-repeat 0px 0px;
     padding: 0px 0px 0px 30px;
 }
 .icon-wave
@@ -175,7 +175,7 @@
         height: 165px;
         width: 165px;
         z-index: 1;
-        background: url(../imgs/template/email.png) no-repeat;
+        background: url(../../imgs/template/email.png) no-repeat;
     }
     .row
     {

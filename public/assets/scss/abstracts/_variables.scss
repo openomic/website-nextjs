@@ -1,9 +1,9 @@
 //1.FONT
 @font-face {
     font-family: "uicons-regular-rounded";
-    src: url("../fonts/uicons/uicons-regular-rounded.eot#iefix") format("embedded-opentype"),
-    url("../fonts/uicons/uicons-regular-rounded.woff2") format("woff2"),
-    url("../fonts/uicons/uicons-regular-rounded.woff") format("woff");
+    src: url("../../fonts/uicons/uicons-regular-rounded.eot") format("embedded-opentype"),
+    url("../../fonts/uicons/uicons-regular-rounded.woff2") format("woff2"),
+    url("../../fonts/uicons/uicons-regular-rounded.woff") format("woff");
 }
 @import url(https://fonts.bunny.net/css?family=chivo:400,700|noto-sans:400,700);
 $font-heading: "Noto Sans", sans-serif;

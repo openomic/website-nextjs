@@ -36,7 +36,7 @@
 }
 .box-green-2
 {
-    background-image: url(../imgs/page/shop1/bg-hand.png);
+    background-image: url(../../imgs/page/shop1/bg-hand.png);
     background-repeat: no-repeat;
     background-position:  bottom right;
     background-size: auto 340px;
@@ -107,13 +107,13 @@
 }
 .icon-sort
 {
-    background: url(../imgs/page/shop1/sort.svg) no-repeat left center;
+    background: url(../../imgs/page/shop1/sort.svg) no-repeat left center;
     padding: 0px 0px 0px 22px;
     display: inline-block;
 }
 .icon-layout
 {
-    background: url(../imgs/page/shop1/layout.svg) no-repeat left center;
+    background: url(../../imgs/page/shop1/layout.svg) no-repeat left center;
     padding: 0px 0px 0px 22px;
     display: inline-block;
 }
@@ -149,26 +149,26 @@
                 }
                 &.prev-page
                 {
-                    background: $color-gray-200 url(../imgs/page/shop1/arrow-prev-gray.svg) no-repeat center;
+                    background: $color-gray-200 url(../../imgs/page/shop1/arrow-prev-gray.svg) no-repeat center;
                     &:hover
                     {
-                        background: $color-green-900 url(../imgs/page/shop1/arrow-prev-hover.svg) no-repeat center;
+                        background: $color-green-900 url(../../imgs/page/shop1/arrow-prev-hover.svg) no-repeat center;
                     }
                 }
                 &.next-page
                 {
-                    background: $color-gray-200 url(../imgs/page/shop1/arrow-next-gray.svg) no-repeat center;
+                    background: $color-gray-200 url(../../imgs/page/shop1/arrow-next-gray.svg) no-repeat center;
                     &:hover
                     {
-                        background: $color-green-900 url(../imgs/page/shop1/arrow-next-hover.svg) no-repeat center;
+                        background: $color-green-900 url(../../imgs/page/shop1/arrow-next-hover.svg) no-repeat center;
                     }
                 }
                 &.page-dotted
                 {
-                    background: $color-gray-200 url(../imgs/page/shop1/doted.svg) no-repeat center;
+                    background: $color-gray-200 url(../../imgs/page/shop1/doted.svg) no-repeat center;
                     &:hover
                     {
-                        background: $color-green-900 url(../imgs/page/shop1/doted-hover.svg) no-repeat center;
+                        background: $color-green-900 url(../../imgs/page/shop1/doted-hover.svg) no-repeat center;
                     }
                 }
             }

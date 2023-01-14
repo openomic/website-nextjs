@@ -34,7 +34,7 @@
         &:hover
         {
             background-color: $color-gray-900;
-            background-image: url(../imgs/template/icons/arrow-small-right-w.svg);
+            background-image: url(../../imgs/template/icons/arrow-small-right-w.svg);
             background-repeat: no-repeat;
             color: $color-white;
             transform: translateY(-2px);
@@ -51,7 +51,7 @@
         font-weight: bold;
         &:hover {
             background-color: $color-gray-900;
-            background-image: url(../imgs/template/icons/arrow-small-right-w.svg);
+            background-image: url(../../imgs/template/icons/arrow-small-right-w.svg);
             background-repeat: no-repeat;
             color: $color-white !important;
             transform: translateY(-2px);
@@ -97,7 +97,7 @@
         color: $color-white;
         &:hover {
             background-color: $color-gray-900;
-            background-image: url(../imgs/template/icons/arrow-small-right-w.svg);
+            background-image: url(../../imgs/template/icons/arrow-small-right-w.svg);
             background-repeat: no-repeat;
             color: $color-white !important;
             transform: translateY(-2px);
@@ -115,7 +115,7 @@
         font-weight: bold;
         &.icon-arrow-right-white:hover {
             background-color: $color-gray-100;
-            background-image: url(../imgs/template/icons/fi-sr-arrow-small-right.svg);
+            background-image: url(../../imgs/template/icons/fi-sr-arrow-small-right.svg);
             background-repeat: no-repeat;
             color: $color-gray-900;
             transform: translateY(-2px);
@@ -164,7 +164,7 @@
     }
     &.btn-round-icon
     {
-        background-image: url(../imgs/template/icons/btn-send.svg);
+        background-image: url(../../imgs/template/icons/btn-send.svg);
         background-repeat: no-repeat;
         background-position: -30px -21px;
         display: inline-block;
@@ -242,7 +242,7 @@
         line-height: 22px;
         color: $color-white;
         background-color: $color-green-900;
-        background-image: url(../imgs/template/icons/arrow-small-right-w.svg);
+        background-image: url(../../imgs/template/icons/arrow-small-right-w.svg);
         background-repeat: no-repeat;
         background-position: center right 25px;
         background-size: 15px;
@@ -259,7 +259,7 @@
         color: $color-green-900;
         padding: 5px 25px 5px 15px;
         border-radius: 8px;
-        background-image: url(../imgs/page/homepage5/icon-plus.svg);
+        background-image: url(../../imgs/page/homepage5/icon-plus.svg);
         background-repeat: no-repeat;
         background-position: center right 10px;
         font-family: $font-heading;
@@ -277,7 +277,7 @@
         color: $color-green-900;
         padding: 5px 32px 5px 15px;
         border-radius: 8px;
-        background-image: url(../imgs/page/homepage8/icon-arrow-green.svg);
+        background-image: url(../../imgs/page/homepage8/icon-arrow-green.svg);
         background-repeat: no-repeat;
         background-position: center right 12px;
         font-family: $font-heading;
@@ -302,32 +302,32 @@
 }
 .icon-arrow-right
 {
-    background-image: url(../imgs/template/icons/fi-sr-arrow-small-right.svg);
+    background-image: url(../../imgs/template/icons/fi-sr-arrow-small-right.svg);
     background-repeat: no-repeat;
     background-position: center right 25px;
     padding-right: 56px;
 }
 .icon-arrow-left
 {
-    background-image: url(../imgs/template/icons/arrow-small-left-white.svg);
+    background-image: url(../../imgs/template/icons/arrow-small-left-white.svg);
     background-repeat: no-repeat;
     background-position: center left 25px;
     padding-left: 56px;
     &:hover
     {
-        background-image: url(../imgs/template/icons/arrow-small-left.svg) !important;
+        background-image: url(../../imgs/template/icons/arrow-small-left.svg) !important;
     }
 }
 .icon-arrow-right-white
 {
-    background-image: url(../imgs/template/icons/arrow-small-right-w.svg);
+    background-image: url(../../imgs/template/icons/arrow-small-right-w.svg);
     background-repeat: no-repeat;
     background-position: center right 25px;
     padding-right: 56px;
 }
 .icon-triangle
 {
-    background-image: url(../imgs/template/icons/icon-triangle.svg);
+    background-image: url(../../imgs/template/icons/icon-triangle.svg);
     background-repeat: no-repeat;
     background-position: center left;
     padding-left: 30px;
@@ -344,7 +344,7 @@
     left: -34px;
     width: 64px;
     height: 72px;
-    background: url(../imgs/template/icons/play-button.svg) no-repeat;
+    background: url(../../imgs/template/icons/play-button.svg) no-repeat;
 }
 // End New Agon
 

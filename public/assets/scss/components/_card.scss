@@ -17,7 +17,7 @@
             right: 0px;
             width: 90px;
             height: 90px;
-            background: url(../imgs/page/homepage1/bg-business.svg) no-repeat;
+            background: url(../../imgs/page/homepage1/bg-business.svg) no-repeat;
         }
     }
     &.bg-local
@@ -31,7 +31,7 @@
             right: 0px;
             width: 90px;
             height: 90px;
-            background: url(../imgs/page/homepage1/bg-local.svg) no-repeat;
+            background: url(../../imgs/page/homepage1/bg-local.svg) no-repeat;
         }
     }
     &.bg-social
@@ -45,7 +45,7 @@
             right: 0px;
             width: 90px;
             height: 90px;
-            background: url(../imgs/page/homepage1/bg-social.svg) no-repeat;
+            background: url(../../imgs/page/homepage1/bg-social.svg) no-repeat;
         }
     }
 }
@@ -349,13 +349,13 @@
             display: inline-block;
             width: 100%;
             padding: 1px 0px 1px 30px;
-            background: url(../imgs/template/icons/check-circle.svg) no-repeat left center;
+            background: url(../../imgs/template/icons/check-circle.svg) no-repeat left center;
             margin-bottom: 12px;
             font-size: $font-sm;
             line-height: 22px;
             color: $color-gray-900;
             &.uncheck{
-                background: url(../imgs/template/icons/un-check-circle.svg) no-repeat left center;
+                background: url(../../imgs/template/icons/un-check-circle.svg) no-repeat left center;
             }
         }
     }
@@ -390,7 +390,7 @@
             border: none;
             .checkbox
             {
-                background: url(../imgs/template/icons/icon-selected.svg) no-repeat 0px 0px;
+                background: url(../../imgs/template/icons/icon-selected.svg) no-repeat 0px 0px;
             }
             .text-heading-5, .text-heading-3, li
             {
@@ -462,10 +462,10 @@
                 color: $color-white;
                 font-family: $font-heading;
                 font-weight: 400;
-                background: url(../imgs/template/icons/icon-untick.svg) no-repeat right 15px top 1px;
+                background: url(../../imgs/template/icons/icon-untick.svg) no-repeat right 15px top 1px;
                 &.active
                 {
-                    background: url(../imgs/template/icons/icon-tick.svg) no-repeat right 15px top 1px;
+                    background: url(../../imgs/template/icons/icon-tick.svg) no-repeat right 15px top 1px;
                 }
             }
         }
@@ -486,7 +486,7 @@
             left: 35px;
             height: 30px;
             width: 30px;
-            background: url(../imgs/template/icons/icon-unselect.svg) no-repeat 0px 0px;
+            background: url(../../imgs/template/icons/icon-unselect.svg) no-repeat 0px 0px;
         }
         .box-info-price
         {
@@ -522,7 +522,7 @@
             background-color: $color-green-900;
             .checkbox
             {
-                background: url(../imgs/template/icons/icon-selected.svg) no-repeat 0px 0px;
+                background: url(../../imgs/template/icons/icon-selected.svg) no-repeat 0px 0px;
             }
             .text-heading-5, .text-heading-3
             {
@@ -806,7 +806,7 @@
             overflow: hidden;
             .like-product
             {
-                background: $background-white url(../imgs/page/homepage5/like.svg) no-repeat center;
+                background: $background-white url(../../imgs/page/homepage5/like.svg) no-repeat center;
                 padding: 10px;
                 width: 33.33%;
                 display: inline-block;
@@ -814,7 +814,7 @@
             }
             .shuffle-product
             {
-                background: $background-white url(../imgs/page/homepage5/shuffle.svg) no-repeat center;
+                background: $background-white url(../../imgs/page/homepage5/shuffle.svg) no-repeat center;
                 padding: 10px;
                 width: 33.33%;
                 display: inline-block;
@@ -824,7 +824,7 @@
             }
             .view-product
             {
-                background: $background-white url(../imgs/page/homepage5/view.svg) no-repeat center;
+                background: $background-white url(../../imgs/page/homepage5/view.svg) no-repeat center;
                 padding: 10px;
                 width: 34%;
                 display: inline-block;
@@ -949,11 +949,11 @@
     }
     .location-icon
     {
-        background: url(../imgs/page/homepage8/location.svg) no-repeat 0px 0px;
+        background: url(../../imgs/page/homepage8/location.svg) no-repeat 0px 0px;
     }
     .calendar-icon
     {
-        background: url(../imgs/page/homepage8/calendar.svg) no-repeat 0px 0px;
+        background: url(../../imgs/page/homepage8/calendar.svg) no-repeat 0px 0px;
         padding-left: 20px;
     }
 }
