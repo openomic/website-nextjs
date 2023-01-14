@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { LogoText } from '../elements/Logo';
 
 export const Footer = () => {
+  const currentYear = new Date().getFullYear();
   return (
     <footer className="footer mt-50">
       <div className="container">
@@ -60,7 +61,7 @@ export const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/kontakt" legacyBehavior>
+                <Link href="/contact" legacyBehavior>
                   <a>Kontakt</a>
                 </Link>
               </li>
@@ -101,11 +102,11 @@ export const Footer = () => {
           <div className="row">
             <div className="col-md-6">
               <span className="text-body-text color-gray-400">
-                © Openomic ApS 2022 · CVR 42229555
+                © Openomic ApS {currentYear} · CVR 42229555
               </span>
             </div>
             <div className="col-md-6 text-center text-lg-end text-md-end">
-              <Link href="/page-terms" legacyBehavior>
+              <Link href="/privacy-policy" legacyBehavior>
                 <a className="text-body-text color-gray-400 ml-50">
                   Privatlivspolitik
                 </a>
