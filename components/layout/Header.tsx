@@ -1,9 +1,11 @@
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 
 import { LogoText } from '../elements/Logo';
 
 export const Header = () => {
+  const router = useRouter();
   const [scroll, setScroll] = useState(false);
   useEffect(() => {
     document.addEventListener("scroll", () => {
@@ -31,22 +33,30 @@ export const Header = () => {
                 <ul className="main-menu">
                   <li>
                     <Link href="/" legacyBehavior>
-                      <a className="active">Forside</a>
+                      <a className={router.pathname == "/" ? "active" : ""}>
+                        Forside
+                      </a>
                     </Link>
                   </li>
                   <li>
                     <Link href="/about" legacyBehavior>
-                      <a>Om os</a>
+                      <a className={router.pathname == "/about" ? "active" : ""}>
+                        Om os
+                      </a>
                     </Link>
                   </li>
                   <li>
                     <Link href="/references" legacyBehavior>
-                      <a>Referencer</a>
+                      <a className={router.pathname == "/references" ? "active" : ""}>
+                        Referencer
+                      </a>
                     </Link>
                   </li>
                   <li>
                     <Link href="/career" legacyBehavior>
-                      <a>Karriere</a>
+                      <a className={router.pathname == "/career" ? "active" : ""}>
+                        Karriere
+                      </a>
                     </Link>
                   </li>
                 </ul>

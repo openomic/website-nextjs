@@ -43,6 +43,9 @@
       float: left;
       position: relative;
       text-align: left;
+      .active {
+        color: $color-primary;
+      }
       &.has-children {
         > a {
           &::after {
