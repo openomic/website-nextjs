@@ -17,7 +17,7 @@ export const Footer = () => {
               <span className="color-gray-900 text-heading-6 mr-30 text-mb-sm-20">
                 Skal vi hjælpe dig med dit næste projekt?
               </span>
-              <Link href="/page-signup" legacyBehavior>
+              <Link href="/contact" legacyBehavior>
                 <a className="btn btn-square">Kontakt os</a>
               </Link>
             </div>
@@ -107,7 +107,7 @@ export const Footer = () => {
             <div className="col-md-6 text-center text-lg-end text-md-end">
               <Link href="/page-terms" legacyBehavior>
                 <a className="text-body-text color-gray-400 ml-50">
-                  Privatlivspolitik{" "}
+                  Privatlivspolitik
                 </a>
               </Link>
             </div>

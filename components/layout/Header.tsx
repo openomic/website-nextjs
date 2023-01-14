@@ -50,7 +50,7 @@ export const Header = () => {
           </div>
           <div className="header-right">
             <div className="block-signin">
-              <Link href="/page-signup" legacyBehavior>
+              <Link href="/contact" legacyBehavior>
                 <a className="btn btn-default hover-up icon-arrow-right">
                   Kontakt os
                 </a>
