@@ -15,7 +15,7 @@ export async function getServerSideProps() {
   const getReferences = fetcherClient.path("/references").method("get").create();
   const getTechnologies = fetcherClient.path("/technologies").method("get").create();
 
-  const { data: references } = await getReferences({});
+  const { data: references } = await getReferences({populate: '*'});
   const { data: technologies } = await getTechnologies({});
   return { props: { references, technologies } };
 }
