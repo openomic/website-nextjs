@@ -39,6 +39,11 @@ export const Header = () => {
                       <a>About</a>
                     </Link>
                   </li>
+                  <li>
+                    <Link href="/contact" legacyBehavior>
+                      <a>Kontakt os</a>
+                    </Link>
+                  </li>
                 </ul>
               </nav>
               <div className="burger-icon burger-icon-white">
@@ -52,7 +57,7 @@ export const Header = () => {
             <div className="block-signin">
               <Link href="/page-signup" legacyBehavior>
                 <a className="btn btn-default hover-up icon-arrow-right">
-                  Get Started
+                  Kontakt os
                 </a>
               </Link>
             </div>
