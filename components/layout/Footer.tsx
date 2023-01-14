@@ -50,18 +50,18 @@ export const Footer = () => {
             <h4 className="text-heading-5">Links</h4>
             <ul className="menu-footer mt-20">
               <li>
-                <Link href="/#" legacyBehavior>
-                  <a>Mission and Vision</a>
+                <Link href="/" legacyBehavior>
+                  <a>Forside</a>
                 </Link>
               </li>
               <li>
-                <Link href="/#" legacyBehavior>
-                  <a>Our Team</a>
+                <Link href="/about" legacyBehavior>
+                  <a>Om os</a>
                 </Link>
               </li>
               <li>
-                <Link href="/page-career" legacyBehavior>
-                  <a>Careers</a>
+                <Link href="/kontakt" legacyBehavior>
+                  <a>Kontakt</a>
                 </Link>
               </li>
             </ul>
@@ -91,7 +91,7 @@ export const Footer = () => {
             <div className="mt-20 text-body-text color-gray-600 mb-20">
               Ønsker du at gøre karriere hos Openomic? Se vores
               <Link href="/#" legacyBehavior>
-                <a>ledige stillinger</a>
+                <a> ledige stillinger</a>
               </Link>
               .
             </div>
