@@ -1,5 +1,5 @@
 import '../public/assets/scss/style.scss';
-import '../styles/globals.css';
+import '../styles/globals.scss';
 
 import { Fetcher } from 'openapi-typescript-fetch';
 
@@ -14,7 +14,7 @@ export default function App({ Component, pageProps }: AppProps) {
     init: {
       headers: {},
     },
-    use: []
+    use: [],
   });
   return <Component {...pageProps} />;
 }
