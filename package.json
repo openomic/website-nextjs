@@ -3,8 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "dev:openapi": "npm run openapi:prod && next dev",
+    "dev": "next dev && npm run openapi:dev",
     "build": "npm run openapi:prod && next build",
     "start": "next start",
     "lint": "next lint",
