@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
+import { LogoText } from '../elements/Logo';
+
 export const Header = () => {
   const [scroll, setScroll] = useState(false);
   useEffect(() => {
@@ -20,10 +22,8 @@ export const Header = () => {
         <div className="main-header">
           <div className="header-left">
             <div className="header-logo">
-              <Link href="/" legacyBehavior>
-                <a className="d-flex">
-                  <img alt="Agon" src="/assets/imgs/template/logo.svg" />
-                </a>
+              <Link href="/">
+                <LogoText />
               </Link>
             </div>
             <div className="header-nav">
@@ -46,11 +46,6 @@ export const Header = () => {
                   </li>
                 </ul>
               </nav>
-              <div className="burger-icon burger-icon-white">
-                <span className="burger-icon-top" />
-                <span className="burger-icon-mid" />
-                <span className="burger-icon-bottom" />
-              </div>
             </div>
           </div>
           <div className="header-right">

@@ -1,5 +1,7 @@
 import Link from 'next/link';
 
+import { LogoText } from '../elements/Logo';
+
 export const Footer = () => {
   return (
     <footer className="footer mt-50">
@@ -8,9 +10,7 @@ export const Footer = () => {
           <div className="row">
             <div className="col-md-4 col-sm-6 text-center text-md-start">
               <Link href="/" legacyBehavior>
-                <a>
-                  <img alt="Agon" src="/assets/imgs/template/logo.svg" />
-                </a>
+                <LogoText />
               </Link>
             </div>
             <div className="col-md-8 col-sm-6 text-center text-md-end">
