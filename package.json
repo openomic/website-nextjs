@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "dev": "npm run dev:remote",
     "dev:local": "npm run openapi:dev && next dev",
     "dev:remote": "npm run openapi:prod && next dev",
     "build": "npm run openapi:prod && next build",
