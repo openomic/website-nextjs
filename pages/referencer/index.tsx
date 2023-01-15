@@ -1,11 +1,13 @@
-import { Layout } from '../components/layout/Layout';
+import Link from 'next/link';
+
+import { Layout } from '../../components/layout/Layout';
 import {
   ReferenceApi,
   ReferenceListResponse,
   TechnologyApi,
   TechnologyListResponse,
-} from '../data';
-import { MY_AXIOS_CONFIG } from './_app';
+} from '../../data';
+import { MY_AXIOS_CONFIG } from '../_app';
 
 export async function getServerSideProps() {
   const referenceClient = new ReferenceApi(MY_AXIOS_CONFIG);
@@ -32,13 +34,11 @@ export default function References({
           <div className="row">
             <div className="col-lg-12 mb-40">
               <h3 className="text-heading-1">Referencer</h3>
-              <p className="text-body-text color-gray-600 mt-10">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                a nisi sit amet lectus sodales pellentesque vel id tellus. Nam
-                viverra porttitor mi at vestibulum. Etiam ut ex in mauris
-                lacinia placerat. Duis ornare pretium orci ac dapibus. In
-                commodo non ante vitae varius. Cras sit amet ornare sapien.
-              </p>
+              {references.data?.map((reference) => (
+                <Link href={`referencer/${reference.id}`} legacyBehavior key={reference.id}>
+                  <a>{reference.attributes?.name}</a>
+                </Link>
+              ))}
               <p className="text-body-text color-gray-600 mt-10">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
                 a nisi sit amet lectus sodales pellentesque vel id tellus. Nam
