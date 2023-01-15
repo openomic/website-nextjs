@@ -1,31 +1,27 @@
-import { Fetcher, OpReturnType } from 'openapi-typescript-fetch';
-
-import { operations, paths } from '../client';
 import { Layout } from '../components/layout/Layout';
+import {
+  ReferenceApi,
+  ReferenceListResponse,
+  TechnologyApi,
+  TechnologyListResponse,
+} from '../data';
+import { MY_AXIOS_CONFIG } from './_app';
 
 export async function getServerSideProps() {
-  const fetcherClient = Fetcher.for<paths>();
-  fetcherClient.configure({
-    baseUrl: process.env.NEXT_PUBLIC_OPEN_API_BASE!,
-    init: {
-      headers: {},
-    },
-    use: [],
-  });
-  const getReferences = fetcherClient.path("/references").method("get").create();
-  const getTechnologies = fetcherClient.path("/technologies").method("get").create();
+  const referenceClient = new ReferenceApi(MY_AXIOS_CONFIG);
+  const referenceResponse = await referenceClient.getReferences();
 
-  const { data: references } = await getReferences({populate: '*'});
-  const { data: technologies } = await getTechnologies({});
-  return { props: { references, technologies } };
+  const technologyClient = new TechnologyApi(MY_AXIOS_CONFIG);
+  const technologyResponse = await technologyClient.getTechnologies();
+  return { props: { references: referenceResponse.data, technologies: technologyResponse.data } };
 }
 
 export default function References({
   references,
   technologies
 }: {
-  references: OpReturnType<operations["get/references"]>;
-  technologies: OpReturnType<operations["get/technologies"]>;
+  references: ReferenceListResponse;
+  technologies: TechnologyListResponse;
 }) {
   console.log(references.data);
   console.log(technologies.data);
