@@ -35,5 +35,5 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# Generated openapi fetch client
-client.ts
+# OpenAPI generated output
+data
